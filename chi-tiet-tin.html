@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Tin Tức - TinTức.News</title>
+    <link rel="stylesheet" href="trang_chu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .article-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .article-header {
+            margin-bottom: 30px;
+        }
+
+        .article-title {
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #666;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 20px;
+        }
+
+        .article-category {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .article-image {
+            width: 100%;
+            max-height: 500px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 30px;
+        }
+
+        .article-content {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+        }
+
+        .article-content h2 {
+            font-size: 24px;
+            margin: 30px 0 15px 0;
+            color: #222;
+        }
+
+        .article-content h3 {
+            font-size: 20px;
+            margin: 25px 0 10px 0;
+            color: #333;
+        }
+
+        .related-articles {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+        }
+
+        .related-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .share-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 15px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+            text-decoration: none;
+        }
+
+        .share-btn:hover {
+            background: #764ba2;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #667eea;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-main">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-top">
+                <div class="logo">
+                    <i class="fas fa-newspaper"></i> TinTức.News
+                </div>
+                <span class="divider"></span>
+                <div id="clock" class="clock"></div>
+                <span class="divider"></span>
+                <div class="header-nav">
+                    <a href="trang_chu.html" class="link-text">← Quay lại trang chủ</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-wrapper" style="padding: 30px; background: white; flex-direction: column;">
+            <a href="trang_chu.html" class="back-link">
+                <i class="fas fa-chevron-left"></i> Quay lại trang chủ
+            </a>
+
+            <article class="article-container">
+                <div class="article-header">
+                    <span class="article-category">CÔNG NGHỆ</span>
+                    <h1 class="article-title">
+                        Công Nghệ AI Mới Đang Cách Mạng Hóa Toàn Bộ Ngành Công Nghiệp
+                    </h1>
+                    <div class="article-meta">
+                        <span><i class="fas fa-user"></i> <strong>Trần Văn A</strong></span>
+                        <span><i class="fas fa-calendar"></i> 2 giờ trước</span>
+                        <span><i class="fas fa-eye"></i> 1,250 lượt xem</span>
+                        <span><i class="fas fa-comment"></i> 45 bình luận</span>
+                    </div>
+                </div>
+
+                <img src="https://via.placeholder.com/900x500?text=AI+Technology" alt="AI Technology" class="article-image">
+
+                <div class="article-content">
+                    <p>
+                        Các công ty công nghệ hàng đầu thế giới vừa công bố những tiến bộ đáng kể trong lĩnh vực trí tuệ nhân tạo (AI). Những công nghệ này dự kiến sẽ cách mạng hóa các ngành công nghiệp từ y tế, giáo dục cho đến sản xuất, mở ra những cơ hội chưa từng có trước đây.
+                    </p>
+
+                    <h2>Những Tiến Bộ Chính</h2>
+                    <p>
+                        Trong cuộc họp báo ngày hôm nay, các lãnh đạo công nghệ đã trình bày ba lĩnh vực đột phá chính:
+                    </p>
+
+                    <h3>1. Xử Lý Ngôn Ngữ Tự Nhiên</h3>
+                    <p>
+                        Mô hình AI mới có thể hiểu và xử lý 100+ ngôn ngữ với độ chính xác 99.8%. Điều này sẽ giúp khẩu kiệp truyền thông toàn cầu dễ dàng hơn bao giờ hết.
+                    </p>
+
+                    <h3>2. Nhận Diện Hình Ảnh Siêu Chính Xác</h3>
+                    <p>
+                        Công nghệ mới có thể phân tích hình ảnh y tế với độ chính xác cao, hỗ trợ các bác sĩ trong việc phát hiện bệnh sớm. Các nhà phát triển cho biết điều này có thể giảm 30% thời gian chẩn đoán.
+                    </p>
+
+                    <h3>3. Dự Báo Tương Lai</h3>
+                    <p>
+                        AI có thể dự báo xu hướng thị trường, mô hình khí hậu, và thậm chí dự báo dịch bệnh với độ chính xác chưa từng thấy. Các chính phủ và doanh nghiệp đang vồn vã tìm cách ứng dụng công nghệ này.
+                    </p>
+
+                    <h2>Tác Động Kinh Tế</h2>
+                    <p>
+                        Theo các nhà kinh tế, những công nghệ AI này sẽ tạo ra hàng triệu việc làm mới trong các lĩnh vực khác nhau. Các công ty đang chuẩn bị đầu tư hàng tỷ đô la vào phát triển và triển khai những giải pháp này.
+                    </p>
+
+                    <p>
+                        "Chúng ta đang ở bước ngoặt lịch sử," phát biểu của CEO một công ty công nghệ hàng đầu. "AI sẽ không chỉ tự động hóa công việc, mà còn giúp con người làm việc thông minh hơn và hiệu quả hơn."
+                    </p>
+
+                    <h2>Quan Điểm Chuyên Gia</h2>
+                    <p>
+                        Các chuyên gia công nghệ cảnh báo rằng cần phải có những quy định rõ ràng để đảm bảo AI được sử dụng an toàn và có đạo đức. Họ cũng nhấn mạnh tầm quan trọng của đào tạo lực lượng lao động mới để thích ứng với cuộc cách mạng công nghiệp này.
+                    </p>
+
+                    <h2>Kết Luận</h2>
+                    <p>
+                        Tương lai của AI rất tươi sáng, nhưng cũng cần sự cân nhắc cẩn thận. Với những công nghệ mạnh như vậy, chúng ta cần đảm bảo rằng nó được sử dụng vì lợi ích của nhân loại chứ không phải để tích tụ quyền lực hoặc gây hại.
+                    </p>
+
+                    <div style="background: #f0f0f0; padding: 20px; border-left: 4px solid #667eea; margin: 20px 0; border-radius: 4px;">
+                        <p><strong>💡 Ghi chú:</strong> Đây là một bài viết minh họa. Nội dung hoàn toàn là hư cấu và chỉ để minh họa chức năng trang web.</p>
+                    </div>
+
+                    <!-- Share buttons -->
+                    <div class="share-buttons">
+                        <a href="#" class="share-btn" onclick="shareOnFacebook(); return false;">
+                            <i class="fab fa-facebook"></i> Chia sẻ Facebook
+                        </a>
+                        <a href="#" class="share-btn" onclick="shareOnTwitter(); return false;">
+                            <i class="fab fa-twitter"></i> Chia sẻ Twitter
+                        </a>
+                        <a href="#" class="share-btn" onclick="copyLink(); return false;">
+                            <i class="fas fa-link"></i> Sao chép link
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Related Articles -->
+                <div class="related-articles">
+                    <h2 class="related-title">Bài Viết Liên Quan</h2>
+                    <div class="related-grid">
+                        <div class="news-item">
+                            <div class="news-item-image">
+                                <img src="https://via.placeholder.com/300x200?text=Related+1" alt="Related">
+                            </div>
+                            <div class="news-item-content">
+                                <span class="news-category">AI</span>
+                                <div class="news-item-title">
+                                    <a href="#">OpenAI Phát Hành GPT-5 Với Khả Năng Siêu Mạnh</a>
+                                </div>
+                                <p class="news-item-meta">4 giờ trước</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-item-image">
+                                <img src="https://via.placeholder.com/300x200?text=Related+2" alt="Related">
+                            </div>
+                            <div class="news-item-content">
+                                <span class="news-category">Công Nghệ</span>
+                                <div class="news-item-title">
+                                    <a href="#">Google Phát Triển Chip AI Đặc Biệt</a>
+                                </div>
+                                <p class="news-item-meta">6 giờ trước</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-item-image">
+                                <img src="https://via.placeholder.com/300x200?text=Related+3" alt="Related">
+                            </div>
+                            <div class="news-item-content">
+                                <span class="news-category">Startups</span>
+                                <div class="news-item-title">
+                                    <a href="#">Startup AI Nhân Bản Được Định Giá 1 Tỷ USD</a>
+                                </div>
+                                <p class="news-item-meta">8 giờ trước</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TinTức.News</h4>
+                    <ul>
+                        <li><a href="trang_chu.html" class="link-text">Trang chủ</a></li>
+                        <li><a href="#" class="link-text">Mới nhất</a></li>
+                        <li><a href="#" class="link-text">Tin nóng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Danh Mục</h4>
+                    <ul>
+                        <li><a href="#" class="link-text">Công Nghệ</a></li>
+                        <li><a href="#" class="link-text">AI</a></li>
+                        <li><a href="#" class="link-text">Fintech</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Hệ</h4>
+                    <ul>
+                        <li><a href="mailto:info@tintuc.com" class="link-text">📧 info@tintuc.com</a></li>
+                        <li>📍 123 Đường Tôn Đức Thắng, Q. 1, TP HCM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TinTức.News. Bảo lưu mọi quyền.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="trang_chu.js"></script>
+    <script>
+        // Cập nhật đồng hồ
+        function updateClock() {
+            const clockElement = document.getElementById('clock');
+            const today = new Date();
+            
+            const weekday = today.toLocaleDateString('vi-VN', {
+                weekday: 'long'
+            });
+            
+            const dateStr = `${weekday}, ${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}`;
+            clockElement.textContent = dateStr;
+        }
+
+        updateClock();
+
+        // Chia sẻ
+        function shareOnFacebook() {
+            const url = window.location.href;
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
+        }
+
+        function shareOnTwitter() {
+            const url = window.location.href;
+            const text = document.querySelector('.article-title').textContent;
+            window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                alert('Đã sao chép link!');
+            });
+        }
+    </script>
+</body>
+</html>
